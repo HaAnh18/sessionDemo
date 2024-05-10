@@ -217,7 +217,7 @@ To change the database location, you'll need to go to `.env` file and change the
 
 ![Sign Up](./public/images/signupFunction.png)
 
-- Hashes the provided password using the `hashPwd` middleware.
+- Hashes the provided password using the `hashPwd` middleware. 
 
 - Collects user data from the request body, including username, name, hashed password, photo, date of birth, and bio.
 
