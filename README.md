@@ -215,7 +215,7 @@ To change the database location, you'll need to go to `.env` file and change the
 
 #### Sign Up
 
-![Sign Up](./public/images/signupFunction.png)
+<!-- ![Sign Up](./public/images/signupFunction.png) -->
 
 - Hashes the provided password using the `hashPwd` middleware. 
 
