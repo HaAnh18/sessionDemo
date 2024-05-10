@@ -13,6 +13,7 @@ app.use(session({
   saveUninitialized: false, // Do not save uninitialized sessions
   cookie: {
     maxAge: 60 * 60 * 1000, // Set session cookie expiration time (1 hour)
+    secure: true,
   }
 }));
 
