@@ -30,6 +30,7 @@ exports.getSignin = async (req, res) => {
 // Controller function for handling user signin
 exports.signin = async (req, res) => {
   // Extracting username and password from the request body
+
   const data = {
     username: req?.body?.username,
     password: req?.body?.password,
@@ -48,7 +49,7 @@ exports.signin = async (req, res) => {
   // If the password is valid, set a session for the user and redirect to the home page
   if (isPasswordValid) {
     req.session.userId = user.id;
-
+    
     // Setting a session cookie expiration time (1 hour in this case)
     req.session.cookie.expires = new Date(Date.now() + 60 * 60 * 1000);
     return res.redirect("/");
